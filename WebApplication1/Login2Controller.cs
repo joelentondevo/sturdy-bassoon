@@ -9,20 +9,21 @@ using System.Web.Http;
 namespace WebApplication1
 {
 
-    public class LoginController : ApiController
+    public class Login2Controller : ApiController
     {
         [HttpPost]
         [ActionName("LoginAttempt")]
-        public HttpResponseMessage PostComplex(Login login)
+        public HttpResponseMessage PostComplex(HttpRequest request)
         {
-            if (ModelState.IsValid && login != null)
+            if (request != null)
             {
-                Console.WriteLine(login);
+                Console.WriteLine("bing");
                 return new HttpResponseMessage(HttpStatusCode.OK);
             }
             else
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest);
+                Console.WriteLine("FailedState but I still did something");
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
         }
     }

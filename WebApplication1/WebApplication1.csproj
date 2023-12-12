@@ -107,7 +107,7 @@
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LoginController.cs" />
+    <Compile Include="Login2Controller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

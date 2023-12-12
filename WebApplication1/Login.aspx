@@ -13,7 +13,7 @@
         </div>
     </form>
 
-    <form name="login" action="api/LoginController/LoginAttempt" method="post"
+    <form name="login" action="api/Login2/LoginAttempt" method="post"
         enctype="application/x-www-form-urlencoded">
      <label for="username">Username:</label>
      <input type="text" id="username" name="username">
@@ -31,15 +31,4 @@
 
 <script>
 
-function loginCheck() {
-    var usernameToCheck = username.value;
-    var passwordToCheck = password.value;
-    if (usernameToCheck == "user01" && passwordToCheck == "password") {
-        window.location.href = "Homepage.aspx";
-    }
-    else {
-        document.getElementById("failmessage").style.visibility = 'visible';
-    }
-
-}
 </script>
