@@ -82,32 +82,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Login.aspx" />
+    <Content Include="Views\Login.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Homepage.aspx" />
+    <Content Include="Views\Homepage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="LoginModel.cs" />
-    <Compile Include="Login.aspx.cs">
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Views\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
+    <Compile Include="Views\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Homepage.aspx.cs">
+    <Compile Include="Views\Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Homepage.aspx.designer.cs">
+    <Compile Include="Views\Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login2Controller.cs" />
+    <Compile Include="Controllers\Login2Controller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

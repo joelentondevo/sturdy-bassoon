@@ -4,7 +4,7 @@
     using System.ComponentModel.DataAnnotations;
     using System.Xml.Linq;
 
-    public class Login
+    public class LoginModel
     {
         [Required]
         [MaxLength(140)]

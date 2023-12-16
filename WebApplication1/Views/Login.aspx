@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
     <title></title>
 </head>
@@ -13,7 +13,7 @@
         </div>
     </form>
 
-    <form name="login" action="api/Login2/LoginAttempt" method="post"
+    <form name="login" action="../Controllers/api/Login2/LoginAttempt" method="post"
         enctype="application/x-www-form-urlencoded">
      <label for="username">Username:</label>
      <input type="text" id="username" name="username">
